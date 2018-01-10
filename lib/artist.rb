@@ -31,12 +31,12 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(artist_name)
+  def self.find_or_create_by_name(artist_name, song_name)
 
     if self.find(artist_name) != nil
       self.find(artist_name)
     else
-      self.create(artist_name)
+      self.create(artist_name, song_name)
     end
     # @@all.detect do |existing_artist|
     #   existing_artist.name == artist_name
