@@ -14,7 +14,6 @@ class Artist
   def self.create(artist_name)
     new_artist = self.new(artist_name)
     @@all << new_artist
-    @songs << new_artist.song
     new_artist
   end
 
