@@ -18,7 +18,7 @@ class Song
     # song.artist = artist_name
     # song.name = song_name
     Artist.find_or_create_by_name(song.artist)
-    Artist.add_song(song_name)
+
     song
   end
 
