@@ -11,7 +11,7 @@ class Artist
     @songs = []
   end
 
-  def self.create(artist_name)
+  def self.create(artist_name, song_name)
     new_artist = self.new(artist_name)
     @@all << new_artist
     new_artist
