@@ -11,7 +11,7 @@ class Artist
     @songs = []
   end
 
-  def self.create(artist_name, song_name)
+  def self.create(artist_name)
     new_artist = self.new(artist_name)
     @@all << new_artist
     new_artist
@@ -31,7 +31,7 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(artist_name, song_name)
+  def self.find_or_create_by_name(artist_name)
 
     if self.find(artist_name) != nil
       self.find(artist_name)
