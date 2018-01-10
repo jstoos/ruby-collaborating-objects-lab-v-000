@@ -13,6 +13,7 @@ class Artist
 
   def self.create(artist_name)
     new_artist = self.new(artist_name)
+    artist.name = artist_name
     @@all << new_artist
     new_artist
   end
