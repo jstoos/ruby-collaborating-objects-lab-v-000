@@ -36,7 +36,7 @@ class Artist
     if self.find(artist_name) != nil
       self.find(artist_name)
     else
-      self.create(artist_name, song_name)
+      self.create(artist_name)
     end
     # @@all.detect do |existing_artist|
     #   existing_artist.name == artist_name
