@@ -28,6 +28,10 @@ binding.pry
     new_song
   end
 
+  def song_name=(song_name)
+    song.name = song_name
+  end
+
   def artist_name=(artist_name)
     song.artist = artist_name
   end
